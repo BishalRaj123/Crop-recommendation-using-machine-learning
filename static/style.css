@@ -1,0 +1,66 @@
+body {
+    background: url('/static/images/agriculture.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: linear-gradient(45deg, rgba(210, 215, 54, 0.289), rgba(138, 152, 191, 0.7));
+    opacity: 0.9;
+    border-radius: 30px;
+}
+
+.login {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(13, 14, 13, 0.1);
+}
+
+.container .login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.8;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 9px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6e8e5ef;
+}
+
+input[type="text"]:hover {
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3c8ade;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.predict-text h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}

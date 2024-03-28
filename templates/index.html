@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Crop Recommendation</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login">
+      <h1> Suitable Crops for the Land Prediction</h1>
+      <!-- Main Input For Receiving Query to our ML Model -->
+      <form id="prediction-form" method="POST" action="/predict">
+        <input type="text" id="temperature" name="temperature" placeholder="Temperature" required="required" />
+        <input type="text" id="humidity" name="humidity" placeholder="Humidity" required="required" />
+        <input type="text" id="ph" name="ph" placeholder="PH scale" required="required" />
+        <input type="text" id="rainfall" name="rainfall" placeholder="Rainfall" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+      </form>
+      <br>
+      <div class="predict-text" id="prediction-text">
+        <h2>
+          {{ prediction_text }}
+        </h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
